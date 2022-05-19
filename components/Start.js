@@ -56,7 +56,7 @@ export default class Start extends React.Component {
                 style={styles.input}
                 onChangeText={(text) => this.setState({ name: text })}
                 value={this.state.name}
-                placeholder="What is your name?"
+                placeholder="Are you called?"
               />
             </View>
 

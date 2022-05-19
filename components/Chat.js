@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from 'react';
+import { View, Text } from 'react-native';
 
 
 
@@ -10,10 +10,8 @@ export default function Chat(props) {
   let { bgColor } = props.route.params;
 
 
-  useEffect(() => {
-    // Set the screen title to the user name entered in the start screen
-    props.navigation.setOptions({ title: name });
-  });
+  props.navigation.setOptions({ title: name });
+
 
 
   return (
@@ -30,8 +28,3 @@ export default function Chat(props) {
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-})
